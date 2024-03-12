@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style_html.css">
+    <title>Get Calibration Statistic</title>
+    <script language="javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Get Calibration Statistic for Dissolved Oxygen (DO)</h2>
+
+        <div class="initial-table">
+            <form method="post" action="getCalib.php">
+                Enter station name here: <input type="text" name="station" value="C11_181" /><br />
+                <input type="submit" value="Click here to get calibration statistic..." />
+            </form>
+        </div>
+
+        <?php include("getCalib.php"); ?>
+    </div>
+</body>
+</html>
